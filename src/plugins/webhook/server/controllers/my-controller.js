@@ -6,6 +6,7 @@ module.exports = ({ strapi }) => ({
       .plugin('webhook')
       .service('myService')
       .getWelcomeMessage();
+      console.log(ctx.request.body);
   },
 });
 
