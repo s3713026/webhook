@@ -146,6 +146,10 @@ module.exports = ({ strapi }) => ({
               "text": `Hệ thống kiểm tra bạn chưa có vé nào`
             })
           };
+          request(options, function (error, response) {
+            if (error) throw new Error(error);
+            console.log(response.body);
+          });
           var options = {
             'method': 'GET',
             'url': 'https://chatapi.viber.com/pa/send_message',
