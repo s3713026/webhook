@@ -27,7 +27,7 @@ module.exports = ({ strapi }) => ({
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            "receiver": 'ZKBz7UV+BBmbWS0KdHjeVg==',
+            "receiver": `${id}`,
             "min_api_version": 7,
             "type": "text",
             "text": `Chào ${name}, bạn cần hỗ trợ dịch vụ gì `,
@@ -42,7 +42,7 @@ module.exports = ({ strapi }) => ({
                   "TextHAlign": "center",
                   "TextVAlign": "middle",
                   "ActionType": "reply",
-                  "ActionBody": "ASIAN",
+                  "ActionBody": "Kiểm tra vé",
                   "BgColor": "#f7bb3f",
                   "Image": "https://static.thenounproject.com/png/383236-200.png"
                 },
@@ -54,7 +54,7 @@ module.exports = ({ strapi }) => ({
                   "TextHAlign": "center",
                   "TextVAlign": "middle",
                   "ActionType": "reply",
-                  "ActionBody": "French",
+                  "ActionBody": "Đặt Vé",
                   "BgColor": "#7eceea",
                   "Image": "https://cdn1.iconfinder.com/data/icons/travel-and-vacation-set-1/64/book_flight-512.png"
                 },
@@ -66,7 +66,7 @@ module.exports = ({ strapi }) => ({
                   "TextHAlign": "center",
                   "TextVAlign": "middle",
                   "ActionType": "reply",
-                  "ActionBody": "Mexican",
+                  "ActionBody": "Check-in Online",
                   "BgColor": "#f6f7f9",
                   "Image": "https://cdn0.iconfinder.com/data/icons/airplane-sign-1/64/check-in-online-plane-tickle-512.png"
                 },
@@ -78,7 +78,7 @@ module.exports = ({ strapi }) => ({
                   "TextHAlign": "center",
                   "TextVAlign": "middle",
                   "ActionType": "reply",
-                  "ActionBody": "Italian",
+                  "ActionBody": "Sky Holiday",
                   "BgColor": "#dd8157",
                   "Image": "https://www.clipartmax.com/png/middle/18-180805_holiday-icon-vacation-icon.png"
                 },
@@ -90,7 +90,7 @@ module.exports = ({ strapi }) => ({
                   "TextHAlign": "center",
                   "TextVAlign": "middle",
                   "ActionType": "reply",
-                  "ActionBody": "Indie",
+                  "ActionBody": "Dịch vụ khác",
                   "BgColor": "#f6f7f9",
                   "Image": "https://banner2.cleanpng.com/20180411/cue/kisspng-airplane-cargo-aircraft-flight-icon-a5-airplane-5ace19b686fba2.8375169615234564385529.jpg"
                 },
@@ -102,7 +102,7 @@ module.exports = ({ strapi }) => ({
                   "TextHAlign": "center",
                   "TextVAlign": "middle",
                   "ActionType": "reply",
-                  "ActionBody": "More",
+                  "ActionBody": "Tổng đài hỏi đáp",
                   "BgColor": "#a8aaba",
                   "Image": "https://cdn-icons-png.flaticon.com/512/950/950299.png"
                 }
