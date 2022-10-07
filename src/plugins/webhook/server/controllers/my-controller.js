@@ -31,76 +31,83 @@ module.exports = ({ strapi }) => ({
             "receiver": id,
             "min_api_version": 7,
             "type": "text",
-            "text": `Chào ${name}, Bạn đang cần hỗ trợ vấn đề nào?`,
+            "text": `Chào ${name}, bạn cần hỗ trợ dịch vụ gì `,
             "keyboard": {
-            "Type": "keyboard",
-              "Buttons": [{
-                "Columns": 2,
-                "Rows": 2,
-                "Text": "<br><font color=\"#494E67\"><b>Kiểm tra vé</b></font>",
-                "TextSize": "large",
-                "TextHAlign": "center",
-                "TextVAlign": "middle",
-                "ActionType": "reply",
-                "ActionBody": "ASIAN",
-                "BgColor": "#f7bb3f",
-                "Image": "https://static.thenounproject.com/png/383236-200.png"
-              }, {
-                "Columns": 2,
-                "Rows": 2,
-                "Text": "<br><font color=\"#494E67\"><b>Đặt Vé</b></font>",
-                "TextSize": "large",
-                "TextHAlign": "center",
-                "TextVAlign": "middle",
-                "ActionType": "reply",
-                "ActionBody": "French",
-                "BgColor": "#7eceea",
-                "Image": "https://cdn1.iconfinder.com/data/icons/travel-and-vacation-set-1/64/book_flight-512.png"
-              }, {
-                "Columns": 2,
-                "Rows": 2,
-                "Text": "<br><font color=\"#494E67\"><b>Check-in Online</b></font>",
-                "TextSize": "large",
-                "TextHAlign": "center",
-                "TextVAlign": "middle",
-                "ActionType": "reply",
-                "ActionBody": "Mexican",
-                "BgColor": "#f6f7f9",
-                "Image": "https://cdn0.iconfinder.com/data/icons/airplane-sign-1/64/check-in-online-plane-tickle-512.png"
-              }, {
-                "Columns": 2,
-                "Rows": 2,
-                "Text": "<br><font color=\"#494E67\"><b>Sky Holiday</b></font>",
-                "TextSize": "large",
-                "TextHAlign": "center",
-                "TextVAlign": "middle",
-                "ActionType": "reply",
-                "ActionBody": "Italian",
-                "BgColor": "#dd8157",
-                "Image": "https://www.clipartmax.com/png/middle/18-180805_holiday-icon-vacation-icon.png"
-              }, {
-                "Columns": 2,
-                "Rows": 2,
-                "Text": "<br><font color=\"#494E67\"><b>Dịch vụ khác</b></font>",
-                "TextSize": "large",
-                "TextHAlign": "center",
-                "TextVAlign": "middle",
-                "ActionType": "reply",
-                "ActionBody": "Indie",
-                "BgColor": "#f6f7f9",
-                "Image": "https://banner2.cleanpng.com/20180411/cue/kisspng-airplane-cargo-aircraft-flight-icon-a5-airplane-5ace19b686fba2.8375169615234564385529.jpg"
-              }, {
-                "Columns": 2,
-                "Rows": 2,
-                "Text": "<br><font color=\"#494E67\"><b>Tổng đài hỏi đáp</b></font>",
-                "TextSize": "large",
-                "TextHAlign": "center",
-                "TextVAlign": "middle",
-                "ActionType": "reply",
-                "ActionBody": "More",
-                "BgColor": "#a8aaba",
-                "Image": "https://cdn-icons-png.flaticon.com/512/950/950299.png"
-              }]
+              "Type": "keyboard",
+              "Buttons": [
+                {
+                  "Columns": 2,
+                  "Rows": 2,
+                  "Text": "<br><font color=\"#494E67\"><b>Kiểm tra vé</b></font>",
+                  "TextSize": "large",
+                  "TextHAlign": "center",
+                  "TextVAlign": "middle",
+                  "ActionType": "reply",
+                  "ActionBody": "ASIAN",
+                  "BgColor": "#f7bb3f",
+                  "Image": "https://static.thenounproject.com/png/383236-200.png"
+                },
+                {
+                  "Columns": 2,
+                  "Rows": 2,
+                  "Text": "<br><font color=\"#494E67\"><b>Đặt Vé</b></font>",
+                  "TextSize": "large",
+                  "TextHAlign": "center",
+                  "TextVAlign": "middle",
+                  "ActionType": "reply",
+                  "ActionBody": "French",
+                  "BgColor": "#7eceea",
+                  "Image": "https://cdn1.iconfinder.com/data/icons/travel-and-vacation-set-1/64/book_flight-512.png"
+                },
+                {
+                  "Columns": 2,
+                  "Rows": 2,
+                  "Text": "<br><font color=\"#494E67\"><b>Check-in Online</b></font>",
+                  "TextSize": "large",
+                  "TextHAlign": "center",
+                  "TextVAlign": "middle",
+                  "ActionType": "reply",
+                  "ActionBody": "Mexican",
+                  "BgColor": "#f6f7f9",
+                  "Image": "https://cdn0.iconfinder.com/data/icons/airplane-sign-1/64/check-in-online-plane-tickle-512.png"
+                },
+                {
+                  "Columns": 2,
+                  "Rows": 2,
+                  "Text": "<br><font color=\"#494E67\"><b>Sky Holiday</b></font>",
+                  "TextSize": "large",
+                  "TextHAlign": "center",
+                  "TextVAlign": "middle",
+                  "ActionType": "reply",
+                  "ActionBody": "Italian",
+                  "BgColor": "#dd8157",
+                  "Image": "https://www.clipartmax.com/png/middle/18-180805_holiday-icon-vacation-icon.png"
+                },
+                {
+                  "Columns": 2,
+                  "Rows": 2,
+                  "Text": "<br><font color=\"#494E67\"><b>Dịch vụ khác</b></font>",
+                  "TextSize": "large",
+                  "TextHAlign": "center",
+                  "TextVAlign": "middle",
+                  "ActionType": "reply",
+                  "ActionBody": "Indie",
+                  "BgColor": "#f6f7f9",
+                  "Image": "https://banner2.cleanpng.com/20180411/cue/kisspng-airplane-cargo-aircraft-flight-icon-a5-airplane-5ace19b686fba2.8375169615234564385529.jpg"
+                },
+                {
+                  "Columns": 2,
+                  "Rows": 2,
+                  "Text": "<br><font color=\"#494E67\"><b>Tổng đài hỏi đáp</b></font>",
+                  "TextSize": "large",
+                  "TextHAlign": "center",
+                  "TextVAlign": "middle",
+                  "ActionType": "reply",
+                  "ActionBody": "More",
+                  "BgColor": "#a8aaba",
+                  "Image": "https://cdn-icons-png.flaticon.com/512/950/950299.png"
+                }
+              ]
             }
           })
         
