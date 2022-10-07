@@ -10,7 +10,8 @@ module.exports = ({ strapi }) => ({
 
       let data = ctx.request.body;
       // console.log(data.sender.id)
-      // console.log(data.event)
+      console.log(data.event)
+      console.log(data.user.body)
       // console.log(data.sender.name)
       // console.log(data.message.text)
       let id = '';
@@ -19,7 +20,7 @@ module.exports = ({ strapi }) => ({
       if(data.event == 'conversation_started'){
         id = data.user.body;
         name = data.user.name;
-        console.log(data.user.body)
+        
         var options = {
           'method': 'GET',
           'url': 'https://chatapi.viber.com/pa/send_message',
