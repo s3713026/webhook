@@ -6,7 +6,7 @@ module.exports = ({ strapi }) => ({
       .plugin('webhook')
       .service('myService')
       .getWelcomeMessage();
-    
+      console.log(ctx.request.body)
 
       let data = ctx.request.body;
       let id = '';
@@ -16,6 +16,7 @@ module.exports = ({ strapi }) => ({
         id = data.sender.id;
         name = data.sender.name;
         message = data.message.text;
+        console.log(id + name + message);
         if (message == "Hello"){
           var options = {
             'method': 'GET',
