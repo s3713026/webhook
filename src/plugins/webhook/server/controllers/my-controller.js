@@ -9,6 +9,7 @@ module.exports = ({ strapi }) => ({
       console.log(ctx.request.body)
 
       let data = ctx.request.body;
+      console.log(data)
       let id = '';
       let name ='';
       let message ='';
@@ -26,7 +27,7 @@ module.exports = ({ strapi }) => ({
               'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-              "receiver": {id},
+              "receiver": id,
               "min_api_version": 1,
               "sender": {
                 "name": "Aka bot "
