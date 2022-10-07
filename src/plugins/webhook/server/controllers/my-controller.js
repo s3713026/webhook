@@ -150,6 +150,7 @@ module.exports = ({ strapi }) => ({
             if (error) throw new Error(error);
             console.log(response.body);
           });
+        } else if (message == "Hệ thống kiểm tra bạn chưa có vé nào"){
           var options = {
             'method': 'GET',
             'url': 'https://chatapi.viber.com/pa/send_message',
@@ -197,7 +198,6 @@ module.exports = ({ strapi }) => ({
             if (error) throw new Error(error);
             console.log(response.body);
           });
-          
         }
       }
   },
