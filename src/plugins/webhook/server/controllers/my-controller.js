@@ -17,7 +17,11 @@ module.exports = ({ strapi }) => ({
       let name ='';
       let message ='';
       if(data.event == 'conversation_started' || data.message.text == 'Back to home'){
-        id = data.user.id || data.sender.id;
+        if(data.event == 'conversation_started'){
+          id = data.user.id 
+        }else{
+          id = data.sender.id;
+        }
         name = data.user.name;
         console.log(data.user.id)
         var options = {
