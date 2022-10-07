@@ -16,7 +16,7 @@ module.exports = ({ strapi }) => ({
       let id = '';
       let name ='';
       let message ='';
-      if(data.event == 'mesage'){
+      if(data.event == 'message'){
         id = data.sender.id;
         name = data.sender.name;
         message = data.message.text;
