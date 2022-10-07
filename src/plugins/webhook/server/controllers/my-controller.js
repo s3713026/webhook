@@ -25,7 +25,6 @@ module.exports = ({ strapi }) => ({
           name = data.sender.name;
         }
         
-        console.log(data.user.id)
         var options = {
           'method': 'GET',
           'url': 'https://chatapi.viber.com/pa/send_message',
