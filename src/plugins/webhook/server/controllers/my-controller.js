@@ -19,7 +19,7 @@ module.exports = ({ strapi }) => ({
       if(data.event == 'conversation_started'){
         id = data.user.body;
         name = data.user.name;
-        console.log(id)
+        console.log(data.user.body)
         var options = {
           'method': 'GET',
           'url': 'https://chatapi.viber.com/pa/send_message',
