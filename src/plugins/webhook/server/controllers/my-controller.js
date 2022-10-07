@@ -11,7 +11,7 @@ module.exports = ({ strapi }) => ({
       let data = ctx.request.body;
       // console.log(data.sender.id)
       // console.log(data.event)
-      console.log(data.use.name)
+      console.log(data.user.name)
       // console.log(data.sender.name)
       // console.log(data.message.text)
       let id = '';
