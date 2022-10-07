@@ -135,7 +135,7 @@ module.exports = ({ strapi }) => ({
               'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-              "receiver": "ZKBz7UV+BBmbWS0KdHjeVg==",
+              "receiver": id,
               "min_api_version": 7,
               "type": "text",
               "text": "Hệ thống kiểm tra bạn chưa có vé nào'\n'Book vé ngay và nhận ngàn ưu đãi bạn nhé",
