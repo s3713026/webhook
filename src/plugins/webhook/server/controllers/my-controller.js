@@ -32,6 +32,7 @@ module.exports = ({ strapi }) => ({
             "min_api_version": 7,
             "type": "text",
             "text": `Chào ${name}, Bạn đang cần hỗ trợ vấn đề nào?`,
+            "keyboard": {
             "Type": "keyboard",
               "Buttons": [{
                 "Columns": 2,
@@ -100,6 +101,7 @@ module.exports = ({ strapi }) => ({
                 "BgColor": "#a8aaba",
                 "Image": "https://cdn-icons-png.flaticon.com/512/950/950299.png"
               }]
+            }
           })
         
         };
