@@ -9,7 +9,10 @@ module.exports = ({ strapi }) => ({
       console.log(ctx.request.body)
 
       let data = ctx.request.body;
-      console.log(data)
+      console.log(data.sender.id)
+      console.log(data.event)
+      console.log(data.sender.name)
+      console.log(data.message.text)
       let id = '';
       let name ='';
       let message ='';
