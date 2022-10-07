@@ -13,6 +13,7 @@ module.exports = ({ strapi }) => ({
       // console.log(data.event)
       // console.log(data.sender.name)
       // console.log(data.message.text)
+      console.log(data.user.id)
       let id = '';
       let name ='';
       let message ='';
