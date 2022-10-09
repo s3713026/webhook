@@ -60,8 +60,13 @@ module.exports = ({ strapi }) => ({
                   "TextSize": "large",
                   "TextHAlign": "center",
                   "TextVAlign": "middle",
-                  "ActionType": "reply",
-                  "ActionBody": "Đặt Vé",
+                  "ActionType": "open-url",
+                  "OpenURLType": "internal",
+                  "InternalBrowser": {
+                    "Mode": "partial-size",
+                    "CustomTitle": "Your Title"
+                  },
+                  "ActionBody": "https://www.vietjetair.com/vi",
                   "BgColor": "#7eceea",
                   "Image": "https://cdn1.iconfinder.com/data/icons/travel-and-vacation-set-1/64/book_flight-512.png"
                 },
@@ -72,8 +77,13 @@ module.exports = ({ strapi }) => ({
                   "TextSize": "large",
                   "TextHAlign": "center",
                   "TextVAlign": "middle",
-                  "ActionType": "reply",
-                  "ActionBody": "Check-in Online",
+                  "ActionType": "open-url",
+                  "OpenURLType": "internal",
+                  "InternalBrowser": {
+                    "Mode": "fullscreen",
+                    "CustomTitle": "Your Title"
+                  },
+                  "ActionBody": "https://www.vietjetair.com/vi/checkin",
                   "BgColor": "#f6f7f9",
                   "Image": "https://cdn0.iconfinder.com/data/icons/airplane-sign-1/64/check-in-online-plane-tickle-512.png"
                 },
@@ -84,8 +94,8 @@ module.exports = ({ strapi }) => ({
                   "TextSize": "large",
                   "TextHAlign": "center",
                   "TextVAlign": "middle",
-                  "ActionType": "reply",
-                  "ActionBody": "Sky Holiday",
+                  "ActionType": "open-url",
+                  "ActionBody": "https://skyholidays.vietjetair.com/vi/",
                   "BgColor": "#dd8157",
                   "Image": "https://www.clipartmax.com/png/middle/18-180805_holiday-icon-vacation-icon.png"
                 },

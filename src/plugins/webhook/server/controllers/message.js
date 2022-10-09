@@ -50,5 +50,6 @@ function checkTicket(id){
       });
 }
 
+
 module.exports = {checkTicket};
 
