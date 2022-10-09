@@ -1,5 +1,5 @@
 'use strict';
-import vMes from './message'
+const vMes = require ('./message');
 var request = require('request');
 module.exports = ({ strapi }) => ({
   send(ctx) {
