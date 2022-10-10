@@ -37,8 +37,8 @@ function checkTicket(id){
                 "TextVAlign": "bottom",
                 "OpenURLType": "internal",
                   "InternalBrowser": {
-                    "Mode": "fullscreen",
-                    "CustomTitle": "Your Title"
+                    "Mode": "partial-size",
+                    "CustomTitle": "Đặt Vé Ngay Với VietJet"
                   },
                 "ActionType": "open-url",
                 "ActionBody": "https://www.vietjetair.com/vi/?utm_source=google-vj-vi&utm_medium=cpc&utm_campaign=ada_awoq32022_kw_rsa_0622awo_brand_name_awoq32022_cpa&gclid=Cj0KCQjwnP-ZBhDiARIsAH3FSRci_cWBXHGt62axjLawmJgbqdhg235ltwvH8306BKFU_j8c6I0Oj4UaAiBOEALw_wcB",
