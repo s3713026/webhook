@@ -138,6 +138,7 @@ module.exports = ({ strapi }) => ({
         name = data.sender.name;
         message = data.message.text;
         if (message == "Kiểm tra vé"){
+          vMes.noBooking(id);
           vMes.checkTicket(id);
         }
       }

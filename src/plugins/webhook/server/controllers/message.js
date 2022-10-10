@@ -1,7 +1,6 @@
 var request = require('request');
 
 function checkTicket(id){
-    noBooking(id);
     var options = {
         'method': 'GET',
         'url': 'https://chatapi.viber.com/pa/send_message',
@@ -73,5 +72,5 @@ function noBooking(id){
 }
 
 
-module.exports = {checkTicket};
+module.exports = {noBooking,checkTicket};
 
