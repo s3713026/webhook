@@ -5,7 +5,7 @@ function checkTicket(id){
         'method': 'GET',
         'url': 'https://chatapi.viber.com/pa/send_message',
         'headers': {
-          'X-Viber-Auth-Token': '4feb123571e7e4b9-3fd0f7323f765805-72c5dd7ea810f8fe',
+          'X-Viber-Auth-Token': '4feff618dba7e3d6-8e0483897e588e0d-641a885d260ede8b',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
@@ -60,7 +60,7 @@ function noBooking(id){
         'method': 'GET',
         'url': 'https://chatapi.viber.com/pa/send_message',
         'headers': {
-          'X-Viber-Auth-Token': '4feb123571e7e4b9-3fd0f7323f765805-72c5dd7ea810f8fe',
+          'X-Viber-Auth-Token': '4feff618dba7e3d6-8e0483897e588e0d-641a885d260ede8b',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
