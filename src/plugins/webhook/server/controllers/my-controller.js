@@ -133,10 +133,10 @@ module.exports = ({ strapi }) => ({
           })
         
         };
-        // request(options, function (error, response) {
-        //   if (error) throw new Error(error);
-        //   console.log(response.body);
-        // });
+        request(options, function (error, response) {
+          // if (error) throw new Error(error);
+          console.log(response.body);
+        });
       }
       else if(data.event == 'message'){
         id = data.sender.id;
