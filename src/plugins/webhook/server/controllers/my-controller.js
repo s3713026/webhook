@@ -64,7 +64,7 @@ module.exports = ({ strapi }) => ({
                   "OpenURLType": "internal",
                   "InternalBrowser": {
                     "Mode": "partial-size",
-                    "CustomTitle": "Đặt Vé Ngay Với VietJet"
+                    "CustomTitle": "VietJet"
                   },
                   "ActionBody": "https://www.vietjetair.com/vi",
                   "BgColor": "#7eceea",
