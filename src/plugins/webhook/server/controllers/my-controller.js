@@ -30,7 +30,7 @@ module.exports = ({ strapi }) => ({
           'method': 'GET',
           'url': 'https://chatapi.viber.com/pa/send_message',
           'headers': {
-            'X-Viber-Auth-Token': '4feff618dba7e3d6-8e0483897e588e0d-641a885d260ede8b',
+            'X-Viber-Auth-Token': '4feffbba4367e257-50449034ca590392-d2a0f6775587dbe',
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
