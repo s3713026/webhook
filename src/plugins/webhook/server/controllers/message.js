@@ -67,7 +67,7 @@ function noBooking(id){
       };
       request(options, function (error, response) {
         if (error) throw new Error(error);
-        console.log(response.body);
+        console.log("TEST",response.body);
       });
 }
 
