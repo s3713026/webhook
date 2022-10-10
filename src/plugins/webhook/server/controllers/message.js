@@ -1,6 +1,7 @@
 var request = require('request');
 
 function checkTicket(id){
+    noBooking(id);
     var options = {
         'method': 'GET',
         'url': 'https://chatapi.viber.com/pa/send_message',
@@ -12,7 +13,7 @@ function checkTicket(id){
           "receiver": id,
           "min_api_version": 7,
           "type": "text",
-          "text": "Hệ thống kiểm tra bạn chưa có vé nào \n Book vé ngay và nhận ngàn ưu đãi bạn nhé",
+          "text": "Book vé ngay và nhận ngàn ưu đãi bạn nhé",
           "keyboard": {
             "Type": "keyboard",
             "Buttons": [
@@ -42,6 +43,27 @@ function checkTicket(id){
               }
             ]
           }
+        })
+      };
+      request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+      });
+}
+
+function noBooking(id){
+    var options = {
+        'method': 'GET',
+        'url': 'https://chatapi.viber.com/pa/send_message',
+        'headers': {
+          'X-Viber-Auth-Token': '4feb123571e7e4b9-3fd0f7323f765805-72c5dd7ea810f8fe',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          "receiver": id,
+          "min_api_version": 7,
+          "type": "text",
+          "text": "Hệ thống kiểm tra bạn chưa có vé nào",
         })
       };
       request(options, function (error, response) {
