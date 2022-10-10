@@ -94,6 +94,11 @@ module.exports = ({ strapi }) => ({
                   "TextSize": "large",
                   "TextHAlign": "center",
                   "TextVAlign": "middle",
+                  "OpenURLType": "internal",
+                  "InternalBrowser": {
+                    "Mode": "fullscreen",
+                    "CustomTitle": "Your Title"
+                  },
                   "ActionType": "open-url",
                   "ActionBody": "https://skyholidays.vietjetair.com/vi/",
                   "BgColor": "#dd8157",
